@@ -1,0 +1,1206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: transparent rgba(41, 181, 247, 0.955);
+}
+/* .about-container{
+    background-color: #f0f0f0;
+   
+
+} */
+
+/* .about-heading {
+    height: 300px;
+    padding-top: 100px;
+   
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    margin: auto;
+} */
+.about-heading {
+    position: relative; /* This is necessary to position the overlay */
+    width: 100%;
+    height: 50vh; /* Full viewport height */
+    overflow: hidden; /* Hide any overflow from the video */
+  }
+  
+  .background-video {
+    position: absolute; /* Positioning the video absolutely */
+    top: 50%; /* Centering the video vertically */
+    left: 50%; /* Centering the video horizontally */
+    min-width: 100%; /* Ensuring the video covers the entire width */
+    min-height: 100%; /* Ensuring the video covers the entire height */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+    transform: translate(-50%, -50%); /* Center the video */
+    z-index: 1; /* Behind the overlay */
+  }
+  
+  .heading-overlay {
+    position: absolute; /* Position overlay on top of the video */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to center */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    z-index: 2; /* In front of the video */
+  }
+  
+  .heading-overlay h1 {
+    font-size: 2rem; /* Adjust size as needed */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Optional shadow for better visibility */
+  }
+  
+  /* Optional media query for responsiveness */
+  @media (max-width: 768px) {
+    .heading-overlay h1 {
+        font-size: 2rem; /* Adjust size for smaller screens */
+    }
+  }
+
+
+  
+
+.About_client p{
+    margin-left: 30px;
+}
+.About_client h3{
+    margin-left: 30px;
+}
+
+
+
+.about-container .about-heading h1 {
+    color: hsl(12, 14%, 93%);
+    font-size: 50px;
+    margin-top: 50px;
+    margin-left: 230px;
+}
+.about-heading span{
+    margin-left: 230px;
+    color: hsl(12, 14%, 93%);
+   
+}
+.about_call{
+    display: flex;
+    gap: 10px;
+}
+.about_call i {
+    padding: 10px;
+    font-size: 30px;
+    animation: ring 1s infinite; /* Apply the animation */
+}
+
+@keyframes ring {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(15deg); }
+    20% { transform: rotate(-10deg); }
+    30% { transform: rotate(8deg); }
+    40% { transform: rotate(-5deg); }
+    50% { transform: rotate(4deg); }
+    60% { transform: rotate(-3deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.about-contact-box{
+    border-top: 2px solid blue;
+}
+
+.about-wrapper {
+    width: 85%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color:white
+}
+.about-content {
+    width: 50%;
+    margin: 20px ;
+    transition: 0.4s ease;
+    background-color: rgb(103, 159, 167);
+    border-radius: 300px;
+}
+.overture-tittle{
+    color: white;
+    margin-left: 100px;
+}
+.message-box{
+    background-color: #60798a;
+    color: rgb(153, 131, 131);
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-right: 40px;
+    padding-bottom: -20px;
+}
+.about-content h2 {
+    padding-bottom: 40px;
+    font-size: 60px;
+}
+.about-content h3 span {
+    font-size: 12px;
+    color: #201c1c;
+}
+.about-content:hover {
+    transform:translateY(-10px)
+}
+.about-content p {
+    color: #666;
+    font-size: 19px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+.about-content .about-btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #3b44f1;
+    color: #fff;
+    padding: 15px 40px;
+    letter-spacing: 1px;
+    border-radius: 20px;
+}
+.about-content .about-btn:hover {
+    color: #f27a7a;
+}
+.about-image {
+    width: 30%;
+   
+    margin-left: 5%;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+}
+.about-contact-box {
+    display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items */
+  padding: 10px; /* Add some padding */
+  border: none; /* Remove default button border */
+  background-color: blue; /* Button background color */
+  color: white;
+  border-radius: 5px; /* Rounded corners */
+  width: 100%; /* Full width */
+  max-width: 300px; /* Maximum width for larger screens */
+  margin: 0 auto; /* Center button horizontally */
+  margin-right: 100px;
+
+}
+
+.about_call {
+    display: flex; /* Use flexbox for the call section */
+    align-items: center; /* Center items vertically */
+  }
+  
+  .about_call i {
+    margin-right: 5px; /* Space between icon and text */
+  }
+  
+  @media (max-width: 600px) {
+    .about-contact-box {
+      padding: 5px; /* Reduce padding on smaller screens */
+      font-size: 14px; /* Smaller font size */
+    }
+  
+    .about_call p {
+      font-size: 12px; /* Even smaller font size for phone numbers */
+    }
+  }
+
+
+@media screen and (max-width: 768px) {
+    .about-wrapper {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    .about-container .about-heading h1 {
+        font-size: 40px;
+    }
+    .about-content, .about-image {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .about-content h2 {
+        font-size: 25px;
+    }
+    .about-content .about-btn {
+        font-size: 16px;
+        padding: 12px 14px;
+    }
+}
+.about-middle {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('/assets/Abb.jpg');
+    height: 800px;
+    padding-top: 200px;
+    text-align: center;
+    padding-left: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.about-middle .about-btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #303bb5;
+    color: #fff;
+    padding: 15px 40px;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+.about-middle p {
+    font-size: 37px;
+}
+
+.about-middle h1 {
+    font-size: 55px;
+    padding-right: 65px;
+}
+
+.about-middle .about-btn:hover {
+    color: #4366f5;
+}
+
+
+.about-section {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: black;
+    align-items: top;
+    padding: 20px 0;
+}
+
+.about-bottom,
+.about-bottom1,
+.about-bottom2 {
+    height: 100px;
+    width: 300px;
+    background-color: white;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    padding-top: 25px;
+    padding-left: 15px;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-bottom {
+    left: 200px;
+}
+
+.about-bottom1 {
+    left: 520px;
+}
+
+.about-bottom2 {
+    left: 840px;
+}
+
+.about-b1 {
+    padding-top: 5px;
+    height: 50px;
+    width: 20%;
+    align-items: center;
+    background: #274cd2;
+    color: white;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-b2 {
+    align-items: center;
+    padding-top: 5px;
+    padding-left: 8px;
+    font-size: 14px; /* Default text size */
+    
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .about-section {
+        padding: 10px 0;
+    }
+
+    .about-bottom,
+    .about-bottom1,
+    .about-bottom2 {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        width: 90%;
+        height: 80px; /* Decreased height of the boxes */
+        margin: 20px auto;
+    }
+
+    .about-b1 {
+        width: 30px; /* Reduced the size of the blue boxes */
+        height: 30px;
+        font-size: 14px; /* Increased the font size within the blue boxes */
+        margin-right: 10px;
+    }
+
+    .about-b2 {
+        padding-left: 10px;
+        text-align: left;
+        font-size: 16px; /* Increased the text size in the .about-b2 section */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-bottom,
+    .about-bottom1,
+    .about-bottom2 {
+        width: 95%; 
+        height: auto;
+        margin: 10px auto;
+        padding: 20px; 
+    }
+
+    .about-b1 {
+        width: 10px;
+        height: 40px;
+        font-size: 14px; 
+        margin-right: 15px;
+    }
+
+    .about-b2 {
+        font-size: 16px; 
+        padding-left: 15px; 
+        text-align: left;
+    }
+
+    .about-b1 p {
+        font-size: 14px; 
+    }
+}
+
+.about-lastpart {
+    display: flex;
+    gap: 10px; /* Adjust as needed */
+    padding: 20px;
+    width: 90%;
+    height: 410px;
+    margin-top: 60px;
+    justify-content: space-around;
+    margin-bottom: -100px;
+}
+
+.about-lastpart > * { 
+    margin: 0; 
+}
+::placeholder{
+    color: red;
+}
+
+
+.about-lastpart img{
+    
+    margin: 0 auto;
+    width: 50%; 
+    height: auto; 
+    
+    object-fit: cover;
+   transform: rotate(-1.5deg);
+}
+.about-one {
+    padding-left: 0px;
+    max-width: 50%;
+}
+
+.about-one h2 {
+    margin-bottom: 20px;
+}
+
+
+.about-one input,
+.about-one textarea
+ {
+    width: 47%;
+    margin: 5px;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 13px;
+
+}
+.about-one select {
+    width: 96%;
+    margin: 5px;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 13px;
+    color: red; /* Default text color */
+}
+
+/* Style for the placeholder option */
+.about-one select option.placeholder-option {
+    color: red; /* Placeholder color */
+}
+
+/* Default color for selected options */
+.about-one select:focus {
+    color: black; /* Ensure selected text is black on focus */
+}
+
+
+
+.about-one textarea {
+    width: 96.5%;
+    height: 80px;
+}
+
+
+
+.about-one button {
+    width: auto; /* Adjusts to content */
+    height: auto; /* Allows for padding to define height */
+    margin-top: 20px;
+    margin-left: 5px;
+    padding: 10px 20px; /* More padding for better appearance */
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 12px; /* Increased font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-one button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .about-middle {
+        padding-left: 20px;
+        padding-top: 100px;
+        height: auto;
+        text-align: left;
+    }
+
+    .about-middle h1 {
+        font-size: 40px;
+        padding-right: 0;
+    }
+
+    .about-middle p {
+        font-size: 25px;
+    }
+
+    .about-middle .about-btn {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    .about-bottom,
+    .about-bottom1,
+    .about-bottom2 {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        width: 100%;
+        margin-bottom: 20px;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .about-lastpart {
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .about-one {
+        padding-left: 0;
+        max-width: 100%;
+    }
+
+      
+   
+      
+      
+
+    .about-one input,
+    .about-one textarea,
+    .about-one button {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .about-one PhoneInput p{
+        margin-left: '0%';
+    }
+
+    .about-b1 {
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .about-b1 p {
+        font-size: 12px;
+    }
+}
+
+.about-two ul{
+    list-style: none;
+    
+}
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .about-heading h1 {
+      margin-left: 10px;
+     
+       
+    }
+    .about-heading span {
+        margin-left: 14.5rem;
+    }
+   
+    .about-contact-box {
+        padding: 15px;
+        max-width: 90%; 
+        margin-top: -20px;
+    }
+
+    .about-contact-box p {
+        font-size: 16px; /* Adjust font size for readability */
+    }
+}
+
+/* Responsive styles for very small screens */
+@media (max-width: 480px) {
+    
+    .about-contact-box {
+        padding: 10px;
+        max-width: 100%; 
+        margin-top: 10px;
+        
+    }
+    .about-heading{
+        padding: 1%;
+        padding-right: -5%;
+        
+    }
+
+    .about-contact-box p {
+        font-size: 14px; /* Further adjust font size for smaller devices */
+    }
+}
+@media (max-width: 768px) {
+    .about-heading h1 {
+        margin-left: 10px !important; /* Use !important as a last resort */
+        margin-top: 10px !important;
+    }
+    .about-heading span {
+        margin-left: 10px !important; /* Use !important as a last resort */
+    }
+}
+.image-container {
+    position: relative;
+    display: inline-block; /* Ensure the container sizes to the image */
+}
+
+.image-container img {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.flex-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; /* Space between sections */
+    box-sizing: border-box;
+}
+
+/* Styling for about-two section */
+.about-two {
+    flex: 1;
+    margin-right: -70px; /* Space between about-two and about-three */
+    margin-bottom: 10px;
+}
+
+/* Styling for about-three section */
+.about-three {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+
+
+}
+
+
+
+/* Responsive Styles for screen width 768px */
+@media screen and (max-width: 768px) {
+    .flex-container {
+        margin-top: 40px;
+        flex-direction: row; /* Keep items side by side */
+        justify-content: space-between; /* Adjust spacing */
+    }
+
+    .about-two {
+        
+        margin-right: 20px; /* Maintain space between sections */
+    }
+
+    .about-three {
+        margin-right: 0; /* No margin-right for the last item */
+    }
+
+    .about-two li {
+        margin-bottom: 15px; /* Adjust space between rows for tablets */
+    }
+}
+
+/* Responsive Styles for screen width 480px */
+@media screen and (max-width: 480px) {
+    .flex-container {
+        flex-direction: row; /* Keep items side by side */
+        justify-content: space-between; /* Adjust spacing */
+    }
+
+    .about-two {
+        margin-right: 2%; 
+        
+    }
+
+    .about-three {
+        margin-right: 0; /* No margin-right for the last item */
+    }
+
+    .about-two li {
+        margin-bottom: 20px; /* Adjust space between rows for tablets */
+    }
+}
+
+
+
+
+.about-side-by-side {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.about-image-text {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    gap: 20px;
+}
+
+.about-image-text img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-text {
+    max-width: 400px;
+}
+
+.about-text h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.about-text p {
+    font-size: 16px;
+    color: #666;
+}
+
+
+
+ @media screen and (max-width: 768px) {
+    .About_client {
+        width: 90%; /* Adjust width for mobile view */
+        margin: 10px auto; /* Center the section with auto margins */
+        padding: 20px; /* Add padding to create some spacing */
+    }
+
+    .About_client p, .About_client h3 {
+        margin-left: 10px; /* Reduce left margin for better alignment */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .About_client {
+        width: 95%; /* Further reduce width for very small screens */
+        padding: 15px; /* Add more padding for better spacing */
+    }
+
+    .About_client p, .About_client h3 {
+        margin-left: 5px; /* Minimize margin for very small screens */
+    }
+}
+@media screen and (max-width: 768px) {
+    .flex-container {
+        display: flex;
+        flex-direction: row; 
+        gap: 7%; 
+    }
+
+    .about-two {
+        width: 20%; 
+    }
+
+    .about-three {
+        width: 80%;
+        margin-top: -5%;
+        display: flex;
+        flex-direction: column; 
+        gap: 0px;
+    }
+
+    .about-three h3 {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .about-three p {
+        font-size: 12px;
+    }
+
+    .about-two ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none; 
+    }
+
+    .about-two li {
+   
+        margin: 7px;
+        padding: 5px;
+    }
+
+    .about-two img {
+        width: 100%; /* Make images responsive */
+        height: auto;
+    }
+
+    .about-three div {
+        margin: -20px;
+    }
+    
+}
+
+/* Additional adjustments for very small screens */
+@media screen and (max-width: 480px) {
+   
+    .about-two li {
+        margin-bottom: -5px; /* Reduced space between images */
+    }
+
+    .about-three div {
+        margin-bottom: 1px; /* Adjusted space between blocks */
+    }
+}
+/* Container for form elements */
+.form-group {
+    position: relative; /* Allows positioning of error messages */
+    margin-bottom: 20px;
+    display: inline-block; /* Ensures the form-group behaves as inline for layout consistency */
+    vertical-align: top; /* Aligns input fields next to each other */
+}
+
+/* Input elements */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 5px; /* Margin for spacing between input and error */
+    height: 40px; /* Fixed height for input */
+}
+
+/* Error message styling */
+.error-message {
+    position: absolute;
+    bottom: -20px; /* Positions the error below the input */
+    left: 0;
+    font-size: 12px;
+    color: red;
+    visibility: hidden; /* Hide by default */
+    white-space: nowrap; /* Prevents the error message from affecting layout */
+}
+
+/* Show error message when input has an error */
+input.error + .error-message {
+    visibility: visible; /* Make visible when an error occurs */
+}
+
+/* Container styling for input and textarea */
+.about-one input, .about-one textarea {
+    width: 47%; /* Maintain input width */
+    margin: 4px;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 13px;
+    height: 40px; /* Fixed height to avoid shifting */
+    display: inline-block; /* Ensures input boxes remain side by side */
+    
+}
+
+.about-one textarea {
+    width: 96.5%; /* Wider width for the textarea */
+    height: 80px;
+}
+
+/* Button styling remains unchanged */
+.about-one button {
+    width: 33%;
+    height: 40px; /* Ensure the height matches input */
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+    .about-one input, .about-one textarea, .about-one button {
+        width: 100%; /* Ensure full-width layout on smaller screens */
+        margin: 10px 0;
+    }
+}
+.about-one p{
+    margin-left: 52%;
+}
+@media screen and (max-width: 768px) {
+    .about-one p{
+        margin-left: 2%;
+    }
+}
+
+
+/* Decorative border using pseudo-element */
+.message-box::before {
+    content: '';
+    position: absolute;
+    top: -10px; /* Adjust for positioning */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 30px; /* Curved edges */
+    border: 4px solid white; /* Border style */
+    z-index: -1; /* Send it behind the box */
+}
+
+
+/* Adding the "tail" of the message bubble */
+.message-box::after {
+    content: '';
+    position: absolute;
+    bottom: -20px; /* Position below the box */
+    left: 30px; /* Offset from the left */
+    width: 0;
+    height: 0;
+    border: 10px solid transparent; /* Invisible borders */
+    border-top-color: maroon; /* Matches the box's background */
+    border-right-color: maroon;
+    transform: rotate(45deg); /* Create the triangle tail */
+    z-index: -1; /* Place it behind the box */
+}
+
+/* Add some padding to the text inside */
+.message-box p {
+    margin: 0; /* Remove default margins */
+    line-height: 1.6; /* Space between lines for readability */
+    color: white;
+}
+
+/* Optional heading inside the message box */
+.message-box h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: white; /* Ensure heading is white as well */
+}
+
+/* For smaller screens, keep the style responsive */
+@media (max-width: 768px) {
+    .message-box {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .message-box::after {
+        left: 20px; /* Adjust the tail position on smaller screens */
+    }
+}
+
+  
+  .message-box h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: white; /* Matching the border color */
+    margin-top: 15px;
+  }
+  
+  .message-box span {
+    color: white;
+    font-weight: normal;
+  }
+  
+  .message-box::before {
+    content: '\f10d'; /* Font Awesome icon for quote */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    top: -10px;
+    left: -15px;
+    font-size: 50px;
+    color: rgba(76, 175, 80, 0.3); /* Faded green */
+  }
+    .about-wrapper {
+        display: flex; /* Use flexbox for side-by-side layout */
+        flex-direction: column; /* Stack items vertically on mobile */
+        gap: 20px; /* Space between sections */
+        max-width: 1200px; /* Limit the maximum width */
+        margin: 0 auto; /* Center the wrapper */
+        padding: 40px; /* Increased padding for a spacious feel */
+        background-color: #ffffff; /* White background for clarity */
+        border: 1px solid #eaeaea; /* Light border for definition */
+        border-radius: 15px; /* More pronounced rounded corners */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Stronger shadow for depth */
+    }
+
+    .about-image {
+        flex: 1; /* Allow the image section to grow */
+        overflow: hidden; /* Crop the image if necessary */
+        border-radius: 15px; /* Rounded corners for the image section */
+    }
+
+    .about-image img {
+        width: 100%; /* Make image responsive */
+        height: auto; /* Maintain aspect ratio */
+        transition: transform 0.3s ease; /* Smooth scale on hover */
+    }
+
+    .about-image img:hover {
+        transform: scale(1.1); /* Slight zoom effect on hover */
+    }
+
+    .about-content {
+        flex: 2; /* Allow the content section to grow more */
+        padding: 25px; /* Padding for the content area */
+        background-color: #EBFFE6; /* Light gray background for contrast */
+        border-radius: 15px; /* Rounded corners for content area */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    }
+
+    .about-content h2 {
+        color: #2c3e50; /* Darker color for the heading */
+        font-size: 30px; /* Larger font size */
+        margin-bottom: 15px; /* Space below the heading */
+        font-family: 'Roboto', sans-serif; /* Modern font */
+    }
+
+    .About_client {
+        margin-top: 15px; /* Space above the client section */
+    }
+
+    .message-box {
+        
+        border-radius: 10px; /* Rounded corners for message box */
+        padding: 20px; /* Padding for the message box */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+        position: relative; /* Positioning for decorative elements */
+        overflow: hidden; /* Clip any overflow */
+    }
+
+    .message-box p {
+        font-style: italic; /* Italicizes the quote */
+        margin-bottom: 10px; /* Space below the quote */
+        font-size: 18px; /* Larger quote text */
+        color: #34495e; /* Slightly darker gray for the quote text */
+    }
+
+    .message-box h3 {
+        font-size: 20px; /* Smaller size for the author's name */
+        color: #7f8c8d; /* Gray color for the author's name */
+        margin-top: 5px; /* Space above the author's name */
+    }
+
+    .about-btn {
+        display: inline-block; /* Make it a block-level element */
+        margin-top: 20px; /* Space above the button */
+        padding: 15px 30px; /* Padding for the button */
+        font-size: 18px; /* Button text size */
+        color: #ffffff; /* White text */
+        background-color: #e74c3c; /* Red button color */
+        border: none; /* No border */
+        border-radius: 5px; /* Rounded button corners */
+        text-decoration: none; /* Removes underline */
+        transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover */
+    }
+
+    .about-btn:hover {
+        background-color: #c0392b; /* Darker red on hover */
+        transform: translateY(-2px); /* Lift effect on hover */
+    }
+
+    /* Responsive adjustments */
+    @media (min-width: 768px) {
+        .about-wrapper {
+            flex-direction: row; /* Row layout for larger screens */
+        }
+
+        .about-image {
+            flex: 1; /* Image takes up one part */
+            margin-right: 20px; /* Space between image and content */
+        }
+
+        .about-content {
+            flex: 2; /* Content takes up two parts */
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        h2 {
+            font-size: 2rem;
+        }
+    
+        .message-body {
+            max-width: 35vh;
+            padding: 8px;
+            border-radius: 30px;
+            margin-left: -40%;
+        }
+    
+        .arrow {
+            display: none; /* Hide the arrow on smaller screens */
+        }
+    
+        .about-btn {
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
+    .container_about {
+        clear: both;
+        position: relative;
+    }
+    
+    .container_about .arrow {
+        width: 12px;
+        height: 20px;
+        overflow: hidden;
+        position: relative;
+        float: left;
+        top:120px;
+        right: -1px;
+    }   
+    
+    .container_about .arrow .outer {
+        width: 0;
+        height: 0;
+        border-right: 20px solid #000000;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .container_about .arrow .inner {
+        width: 0;
+        height: 0;
+        border-right: 20px solid #6B8E23;
+       
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        position: absolute;
+        top: 0;
+        left: 2px;
+    }
+    
+    .container_about .message-body {
+        float: left;
+        width: 500px; /* Increased width */
+        height: auto;
+        border: 1px solid #CCC;
+        background-color: #6B8E23;
+  
+        border: 1px solid #000000;
+        padding: 30px 25px; /* Increased padding */
+        border-radius: 100px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    }
+    
+    .container_about .message-body p {
+        margin: 0;
+        font-size: 16px; /* Adjust font size if needed */
+    }
+
+
+   
+    
+    .message-body p {
+        margin: 0 0 15px; /* Margin below the paragraph */
+        font-size: 16px; /* Font size for readability */
+        line-height: 1.5; /* Line height for spacing */
+        color: white; /* Dark gray color for the text */
+        font-style: italic; /* Italic for quotes */
+    }
+    
+    .message-body h3 {
+        margin: 0 0 5px; /* Margin below the heading */
+        font-size: 25px; /* Font size for the name */
+        font-weight: 600;
+        color: #001219; /* Darker color for better contrast */
+    }
+    
+    .message-body h3 span {
+        font-weight: normal; /* Normal weight for the title */
+        color: white; /* Lighter color for the title */
+    }
+    
+    .about-btn {
+        display: inline-block; /* Button as an inline block */
+        margin-top: 15px; /* Space above the button */
+        padding: 10px 15px; /* Padding for button */
+        background-color: #007bff; /* Button background color */
+        color: #fff; /* Button text color */
+        text-decoration: none; /* Remove underline */
+        border-radius: 5px; /* Rounded corners for button */
+        transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+    }
+    
+    .about-btn:hover {
+        background-color: #0056b3; /* Darker shade on hover */
+        transform: scale(1.05); /* Slightly enlarge on hover */
+    }
+    
+    

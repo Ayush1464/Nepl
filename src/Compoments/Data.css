@@ -1,0 +1,146 @@
+/* Base Styles */
+.data-box {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  width: 90%; /* Full width with some padding */
+  max-width: 650px; /* Limit max width for larger screens */
+  background-color: #f0f4ff; /* Soft background color */
+  margin: 20px auto; /* Center with automatic margins */
+  border-radius: 15px; /* Rounded corners */
+  padding: 25px; /* Padding inside the box */
+  margin-top: 2%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow for elevation */
+}
+
+.data-h2 {
+  color: #333; /* Darker text for better contrast */
+  line-height: 1.5; /* Increased line height for better readability */
+  font-size: 24px; /* Increased font size */
+  font-weight: 600; /* Bold font */
+  margin-bottom: 15px; /* Space below the heading */
+  text-align: center; /* Center text */
+}
+
+.data-span {
+  color: #4a9e1d; /* Fresh green color */
+  font-size: 16px; /* Slightly larger font size */
+  margin-bottom: 8px; /* Space below the span */
+  text-align: center; /* Center text */
+}
+
+.data-paga {
+  line-height: 1.6; /* Increased line height for better readability */
+  font-family: 'Arial', sans-serif; /* Modern sans-serif font */
+  font-size: 14px; /* Adjusted font size */
+  color: #555; /* Softer grey color */
+  margin-bottom: 15px; /* Space below the paragraph */
+  text-align: justify; /* Justify text for a cleaner look */
+}
+
+.data-span1 {
+  color: #e32636; /* Accent color */
+  text-transform: uppercase;
+  font-size: 18px; /* Adjusted font size */
+  font-weight: 700; /* Bolder font */
+  margin-bottom: 12px; /* Space below the span */
+  text-align: center; /* Center text */
+}
+
+.data-button {
+  background-color: #3498db; /* Bright blue color */
+  width: 140px; /* Wider button */
+  height: 45px; /* Taller button */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 30px; /* More rounded button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+  margin-top: 15px; /* Space above the button */
+  align-self: center; /* Center button */
+}
+
+.data-button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Video styling */
+.data_video
+video {
+  width: 90%; /* Slightly wider for better visibility */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 200px; /* Set a maximum height */
+  border-radius: 10px; /* Rounded corners */
+  margin-top: 15px; /* Space above video */
+  display: block; /* Centering the video */
+  margin-left: auto; /* Center video */
+  margin-right: auto; /* Center video */
+}
+
+/* Responsive Styles */
+/* For screens up to 1024px (tablets and large screens) */
+@media (max-width: 1024px) {
+  .data-box {
+    width: 95%; /* Slightly narrower on smaller screens */
+    padding: 20px; /* Adjust padding */
+  }
+
+  .data-h2 {
+    font-size: 20px; /* Adjust font size */
+  }
+
+  .data-span,
+  .data-paga,
+  .data-span1 {
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .data-button {
+    width: 130px; /* Adjust button width */
+    height: 40px; /* Adjust button height */
+  }
+}
+
+/* For screens up to 768px (portrait tablets and large phones) */
+@media (max-width: 768px) {
+  .data-box {
+    padding: 15px; /* Adjust padding */
+  }
+
+  .data-h2 {
+    font-size: 18px; /* Adjust font size */
+  }
+
+  .data-span,
+  .data-paga,
+  .data-span1 {
+    font-size: 12px; /* Adjust font size */
+  }
+
+  .data-button {
+    width: 120px; /* Adjust button width */
+    height: 35px; /* Adjust button height */
+  }
+}
+
+/* For screens up to 480px (mobile devices) */
+@media (max-width: 480px) {
+  .data-box {
+    padding: 10px; /* Less padding for small screens */
+  }
+
+  .data-h2 {
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .data-span,
+  .data-paga,
+  .data-span1 {
+    font-size: 10px; /* Adjust font size */
+  }
+
+  .data-button {
+    width: 100px; /* Adjust button width */
+    height: 30px; /* Adjust button height */
+  }
+}

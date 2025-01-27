@@ -1,0 +1,113 @@
+/* Base styles for larger screens */
+.last_ServiceLast {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-left: 220px;
+    height: auto;
+    margin-bottom: -100px;
+}
+
+.bottom_ServiceLast {
+    width: 22%;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(224, 197, 197, 0.2);
+    border-top: 10px solid blue;
+    margin: 10px;
+}
+
+.con_ServiceLast {
+    padding: 5px;
+}
+
+.con_ServiceLast h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.con_ServiceLast p {
+    color: #0000;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.con_ServiceLast .last_BtnServiceLast {
+    display: inline-block;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 20px;
+    border: 1px black;
+}
+
+.con_ServiceLast .last_BtnServiceLast:hover {
+    background-color: #3970e7;
+    color: #ffffffb0;
+}
+
+.con_ServiceLast .last_BtnServiceLast i {
+    color: rgb(30, 173, 54);
+    font-size: 18px;
+}
+
+/* Responsive styles for mobile screens */
+@media (max-width: 768px) {
+    .last_ServiceLast {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .bottom_ServiceLast {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .con_ServiceLast h3 {
+        font-size: 18px;
+    }
+
+    .con_ServiceLast p {
+        font-size: 14px;
+    }
+
+    .con_ServiceLast .last_BtnServiceLast {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+}
+
+/* Additional responsive styles for very small screens */
+@media (max-width: 480px) {
+    .last_ServiceLast {
+        margin-left: 120px; 
+        margin-bottom: 15px; /* Adjust margin for better fit */
+    }
+
+    .bottom_ServiceLast {
+        width: 50%; /* Full width for small screens */
+    
+    }
+
+    .con_ServiceLast h3 {
+        font-size: 16px; /* Smaller font size for very small screens */
+    }
+
+    .con_ServiceLast p {
+        font-size: 12px; /* Smaller font size for very small screens */
+    }
+
+    .con_ServiceLast .last_BtnServiceLast {
+        font-size: 16px; /* Smaller font size for very small screens */
+        padding: 6px 12px; /* Adjust padding for very small screens */
+    }
+    .center-mobile2{
+        text-align: center;
+        margin-left: 30% !important;
+        font-size: 20px; /* Adjust the font size if needed */
+    }
+}

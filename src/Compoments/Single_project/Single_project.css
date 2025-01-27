@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Project_Background {
+    background-image: url('/assets/pp.jpg');
+    height: 50vh;
+    padding-top: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+@media (max-width: 768px) {
+    .Project_Background {
+        height: 250px; 
+        padding-top: 80px; 
+        padding-left: 150px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .Project_Background {
+        height: 200px; /* Adjust height for mobile */
+        padding-top: 60px; /* Adjust padding for mobile */
+        padding-left: 50px; /* Adjust padding for mobile */
+        background-position: center;
+        background-size: cover; /* Maintain cover size */
+    }
+}
+.Project_Background {
+    background-color: #333; /* Example background color */
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .Project_Background h2 {
+    color: white;
+    margin-left: 18%;
+    margin-top: 10%;
+  }
+  
+  .Project_Background p {
+    color: white;
+    margin-left: 18%;
+
+  }
+  

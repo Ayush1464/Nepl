@@ -1,0 +1,139 @@
+.wrapper_Service3 {
+    width: 65%;
+    margin: 50px auto; /* Center the wrapper */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    max-width: 1000px; /* Set a max width */
+}
+
+.content_Service3 {
+    width: 50%;
+    transition: 0.4s ease;
+}
+
+.content_Service3 h2 {
+    padding-bottom: 40px;
+    font-size: 60px;
+}
+
+.content_Service3 h3 span {
+    font-size: 12px;
+    color: #201c1c;
+}
+
+.content_Service3:hover {
+    transform: translateY(-10px);
+}
+
+.content_Service3 h1 b {
+    font-size: 30px;
+    color: #4249a9;
+}
+
+.content_Service3 p {
+    color: #666;
+    font-size: 19px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.image_Service3 {
+    width: 100%; /* Change to 100% for responsive sizing */
+    max-width: 21em; /* Set a max width */
+    height: auto; /* Let the height adjust automatically */
+    box-shadow: 5px 5px 5px #6294da;
+    transition: 0.4s ease;
+    color: #fff;
+    padding: 50px;
+    background-color: #3b44f1;
+}
+
+.image_Service3 button i {
+    font-size: 16px;
+}
+
+.image_Service3 .button {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px;
+    border: 1px solid white;
+    height: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.image_Service3 button:hover {
+    color: #fff;
+    background-color: #3b44f1;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .wrapper_Service3 {
+        width: 100%;
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content_Service3 {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .content_Service3 h2 {
+        font-size: 30px;
+    }
+
+    .content_Service3 h1 b {
+        font-size: 25px;
+    }
+
+    .content_Service3 p {
+        font-size: 16px;
+    }
+
+    .image_Service3 {
+        max-width: 100%; /* Make images responsive */
+        height: auto; /* Let the height adjust automatically */
+        margin: 20px 0;
+    }
+
+    .image_Service3 button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper_Service3 {
+        margin-top: 10px;
+    }
+
+    .content_Service3 h2 {
+        font-size: 24px;
+    }
+
+    .content_Service3 h1 b {
+        font-size: 20px;
+    }
+
+    .content_Service3 p {
+        font-size: 14px;
+    }
+
+    .image_Service3 {
+        max-width: 100%; /* Ensure max width for small screens */
+        height: auto; /* Let the height adjust automatically */
+        margin: 10px 0;
+    }
+
+    .image_Service3 button {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}

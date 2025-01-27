@@ -1,0 +1,312 @@
+.main-clientbox {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 80%; 
+    max-width: 1200px; 
+    margin: 200px auto; 
+    margin-bottom: -50px;
+   
+}
+
+
+.clientbox-img {
+    flex: 1;
+}
+
+
+.clientimg {
+    width: 100%;
+    height: auto;
+}
+
+
+.slider-wrapper {
+    flex: 2;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+
+.slider-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.clientbox-message {
+    min-width: 100%; 
+    box-sizing: border-box;
+    padding: 20px;
+    border-right: 1px solid #ddd; 
+    background-color: rgb(142, 186, 197);
+    color: rgb(17, 12, 2);
+}
+
+
+.client-icon {
+    width: 30px; 
+    height: auto;
+    margin-right: 10px;
+}
+
+
+.client-para {
+    font-size: 16px;
+    margin: 0 0 10px 40px; 
+}
+
+
+.client-span1 {
+    font-weight: bold;
+}
+
+.client-span2 {
+    color: gray;
+}
+
+
+.dots-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #333; 
+}
+
+
+.prev-button, .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+
+.slider-wrapper:hover .prev-button,
+.slider-wrapper:hover .next-button {
+    opacity: 1; 
+}
+
+
+.prev-button {
+    left: 0%;
+}
+
+.next-button {
+    right: 0%;
+}
+
+
+@media (max-width: 1200px) {
+    .main-clientbox {
+        margin: 100px auto; 
+    }
+}
+
+@media (max-width: 768px) {
+    .main-clientbox {
+        flex-direction: column;
+        margin: 50px auto; /* Adjust top margin for small screens */
+    }
+
+    .clientbox-img {
+        margin-bottom: 20px; /* Add space below the image for small screens */
+    }
+
+    .slider-wrapper {
+        flex: none;
+    }
+
+    .client-para {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        margin: 0 0 10px 20px; /* Adjust margin for quote icon */
+    }
+
+    .client-span1, .client-span2 {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .dots-container {
+        margin-top: 10px; /* Adjust margin for dots on small screens */
+    }
+
+    .prev-button, .next-button {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .client-para {
+        font-size: 12px; /* Adjust font size for very small screens */
+        margin: 0 0 10px 10px; /* Adjust margin for quote icon */
+    }
+    .main-clientbox{
+        margin-top: 250px;
+        margin-bottom: -50px;
+    }
+
+
+    .client-span1, .client-span2 {
+        font-size: 12px; /* Adjust font size for very small screens */
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .prev-button, .next-button {
+        padding: 6px;
+    }
+}
+
+/* For better visibility of the example */
+
+  
+  /* Message box starts here */
+  .container_client {
+    clear: both;
+    position: relative;
+}
+
+.container_client .arrow {
+    width: 12px;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    top: 15px;
+    right: -1px;
+}
+
+.container_client .arrow .outer {
+    width: 0;
+    height: 0;
+    border-right: 20px solid #000000;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container_client .arrow .inner {
+    width: 0;
+    height: 0;
+    border-right: 20px solid #ffffff;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 2px;
+}
+
+.container_client .message-body {
+    float: left;
+    width: 600px;
+    height: auto;
+    border: 1px solid #CCC;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 6px 8px;
+    border-radius: 20px;
+}
+
+.container_client .message-body p {
+    margin: 0;
+    color: black;
+}
+
+.clientbox-message {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    color: rgb(17, 12, 2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.client-details {
+    margin-top: 10px; /* Space between the message box and name */
+    text-align: left;
+}
+
+.client-span1 {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.client-span2 {
+    color: #191970;
+    font-size: 20px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .container_client .message-body {
+        width: calc(100% - 40px); /* Full width with padding */
+        padding: 10px;
+        margin: 0 20px; /* Margin for spacing */
+        border-radius: 15px; /* Slightly adjust border radius */
+    }
+
+    .clientbox-message {
+        padding: 15px;
+    }
+
+    .client-span1 {
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .client-span2 {
+        font-size: 12px; /* Smaller font size */
+    }
+
+    .container_client .arrow {
+        display: none; /* Hide arrow on small screens to save space */
+    }
+}
+
+@media (max-width: 480px) {
+    .container_client .message-body {
+        padding: 8px; /* Less padding on very small screens */
+        font-size: 14px; /* Adjust font size */
+        border-radius: 10px; /* Adjust border radius */
+    }
+
+    .clientbox-message {
+        padding: 8px; /* Less padding on very small screens */
+    }
+
+    .client-span1 {
+        font-size: 12px; /* Further reduce font size */
+    }
+
+    .client-span2 {
+        font-size: 10px; /* Further reduce font size */
+    }
+}

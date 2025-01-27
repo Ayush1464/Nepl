@@ -1,0 +1,58 @@
+/* HexagonRow.css */
+.hexagon-row {
+    display: flex; /* Use flexbox to align hexagons */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center; /* Center the hexagons horizontally */
+    gap: 140px; /* Reduced space between hexagons on larger screens */
+    margin-bottom: 40px; /* Space between rows */
+}
+
+.hexagon {
+    width: 180px; /* Reduced default width for responsiveness */
+    height: 130px; /* Adjusted height to maintain hexagon shape */
+    position: relative;
+    display: flex; /* Flexbox for centering content */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-color: #FF5733; /* Default color */
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+.hexagon-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Text color */
+    font-weight: bold; /* Bold text */
+    font-size: 16px; /* Text size */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hexagon-row {
+        gap: 20px; /* Decrease gap between hexagons on smaller screens */
+    }
+    .hexagon {
+        width: 120px; /* Smaller width for tablets and smaller screens */
+        height: 104px; /* Adjusted height to maintain hexagon shape */
+    }
+    .hexagon-inner {
+        font-size: 14px; /* Smaller font size for smaller hexagons */
+    }
+}
+
+@media (max-width: 480px) {
+    .hexagon-row {
+        gap: 15px; /* Further reduced gap for small screens */
+    }
+    .hexagon {
+        width: 100px; /* Further reduced width for mobile screens */
+        height: 86px; /* Adjusted height for hexagon shape */
+    }
+    .hexagon-inner {
+        font-size: 12px; /* Smaller font size for mobile screens */
+    }
+}

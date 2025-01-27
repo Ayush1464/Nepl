@@ -1,0 +1,44 @@
+.Typed_Com1 {
+  width: 100%;
+  overflow: hidden; /* Hide content overflowing the container */
+  margin-top: 2%;
+}
+
+.typed1 {
+  display: flex;
+  animation: marquee-animation 20s linear infinite; /* Adjust animation speed */
+  gap: 2rem;
+  white-space: nowrap; /* Prevent items from wrapping */
+}
+
+.photo {
+  width: 30vw; /* Adjust image width to fit your design */
+  height: 30vh;
+  margin-right: 20px;
+  flex-shrink: 0; /* Prevent images from shrinking */
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  .photo {
+    width: 40vw; /* Adjust width for smaller screens */
+    height: 25vh; /* Adjust height for smaller screens */
+  }
+}
+
+/* For very small screens (like phones in portrait mode) */
+@media (max-width: 480px) {
+  .photo {
+    width: 50vw; /* Adjust width for very small screens */
+    height: 20vh; /* Adjust height for very small screens */
+  }
+}
+
+@keyframes marquee-animation {
+  0% {
+    transform: translateX(100%); /* Start from the right */
+  }
+  100% {
+    transform: translateX(-100%); /* End at the left */
+  }
+}

@@ -1,0 +1,215 @@
+/* Keyframes for Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+/* Special Projects Container */
+.special-projects {
+  width: 100%;
+  max-width: 750px;
+  padding: 20px;
+  margin: 40px auto 0;
+}
+
+/* Animation for Heading */
+.special-projects h3 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
+  opacity: 0; /* Start hidden */
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Project Container */
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+/* Project Grid Item 1 */
+.project-grid1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-item1 {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.project-item1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Project Grid Item 2 */
+.project-grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+/* Project Item */
+.project-item {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Hover Effect for Project Item */
+.project-item:hover {
+  transform: scale(1.05);
+}
+
+/* Commercial Overlay */
+.commercial-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/proj4.jpeg');
+  background-size: cover;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Commercial Overlay Text */
+.commercial-overlay p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.commercial-overlay h3 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.commercial-overlay button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Media Queries */
+
+/* Tablets and Small Screens */
+@media (max-width: 768px) {
+  .project-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .project-grid2 {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .project-item {
+    height: 200px;
+  }
+
+  .project-item img {
+    width: 80%; /* Decrease image width */
+    height: 80%; /* Decrease image height */
+  }
+
+  .commercial-overlay h3 {
+    font-size: 20px;
+  }
+
+  .commercial-overlay p {
+    font-size: 16px;
+  }
+
+  .commercial-overlay button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  .special-projects {
+    padding: 10px;
+  }
+
+  .project-container {
+    grid-template-columns: 1fr;
+  }
+
+  .project-grid2 {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .project-item {
+    height: 150px;
+  }
+  .project-item1 {
+    height: 300px;
+  }
+
+  .project-item img {
+    width: 70%; /* Further decrease image width */
+    height: 90%; /* Further decrease image height */
+  }
+  .project-item1 img {
+    width: 100%; /* Further decrease image width */
+  }
+
+  .commercial-overlay h3 {
+    font-size: 18px;
+  }
+
+  .commercial-overlay p {
+    font-size: 14px;
+  }
+
+  .commercial-overlay button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}

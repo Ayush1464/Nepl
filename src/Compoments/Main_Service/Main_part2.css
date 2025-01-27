@@ -1,0 +1,116 @@
+/* Main_part2.css */
+.new_main {
+    width: 60%;
+    max-width: 1200px;
+    
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: -100px;
+}
+
+.new_inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: auto;
+    width: 100%;
+    gap: 0px;
+}
+
+.image_container img {
+    width: 100%;
+    height: 100%; /* Maintain aspect ratio for images */
+    object-fit: cover;
+}
+
+.mainService_slide {
+    height: 300px; /* Set a consistent height for all slides */
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute space evenly */
+    align-items: flex-start;
+    background-color: #f0f0f0;
+    color: black;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.mainService_slide h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.mainService_slide p {
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+    .mainService_slide h2 {
+        font-size: 2rem;
+    }
+
+    .mainService_slide p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .new_inner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .mainService_slide h2 {
+        font-size: 1.2rem;
+    }
+
+    .mainService_slide p {
+        font-size: 0.9rem;
+    }
+}
+/* Mobile view CSS (screens below 480px) */
+@media (max-width: 480px) {
+    .new_main {
+        width: 100%; /* Make the container full width */
+        margin-top: 50px; /* Reduce top margin for better alignment */
+        margin-bottom: 50px; /* Add some spacing to the bottom */
+    }
+
+    .new_inner {
+        grid-template-columns: 1fr; /* Single column layout for small screens */
+        gap: 10px; /* Add some space between grid items */
+        margin-top: 5%;
+        margin-bottom: 65%;
+        width: 90%;
+        
+    }
+
+    .mainService_slide {
+        height: auto; /* Allow the height to adjust dynamically */
+        padding: 10px; /* Reduce padding */
+        margin: 10px 0; /* Add margin between slides */
+        background-color: #f0f0f0;
+    }
+
+    .mainService_slide h2 {
+        font-size: 1rem; /* Reduce the heading size */
+    }
+
+    .mainService_slide p {
+        font-size: 0.8rem; /* Reduce the paragraph text size */
+    }
+
+    .image_container img {
+        height: auto; /* Ensure the aspect ratio is maintained without forcing height */
+        object-fit: contain; /* Make sure images scale well on smaller screens */
+    }
+}
+

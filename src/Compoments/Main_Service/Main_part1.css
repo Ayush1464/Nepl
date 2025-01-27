@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_header {
+    position: relative;
+    height: 50vh; /* 40% of the viewport height */
+    color: white;
+    width: 100%;
+}
+
+
+.main_header-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.main_header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    height: 100%;
+}
+
+.main_header-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.main_header-content p {
+    margin-bottom: 10px;
+}
+
+.main_header-box {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 200px;
+    text-align: center;
+    position: absolute;
+    top: 255px;
+    right: 160px;
+    width: 267px;
+    border-top: 5px solid rgb(14, 28, 222);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .main_header {
+        height: 250px; /* Reduce header height on smaller screens */
+    }
+
+    .main_header-content h1 {
+        font-size: 28px; /* Smaller font size for headings */
+    }
+
+    .main_header-box {
+        top: 200px; /* Adjust box position */
+        right: 20px; /* Bring the box closer to the center */
+        width: 220px; /* Adjust box width */
+    }
+}
+
+@media (max-width: 480px) {
+    .main_header {
+        height: 200px; /* Further reduce header height on very small screens */
+    }
+
+    .main_header-content h1 {
+        font-size: 24px; /* Even smaller font size for headings */
+        margin-left: 10% !important;
+    }
+    .main_header-content span {
+        font-size: 24px; /* Even smaller font size for headings */
+        margin-left: 10% !important;
+    }
+
+    .main_header-box {
+        top: 140px; /* Adjust box position */
+        right: 10px; /* Center the box more */
+        width: 200px; /* Adjust box width */
+    }
+}
+
+.about_call_service{
+    display: flex;
+    gap: 10px;
+}
+.about_call_service i {
+    padding: 5px;
+    font-size: 30px;
+    animation: ring 1s infinite; /* Apply the animation */
+}

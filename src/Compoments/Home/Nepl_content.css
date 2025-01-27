@@ -1,0 +1,101 @@
+.nepl-content-container {
+    padding: 4rem;
+    background-color: #ffffff;
+    border-radius: 1.5rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 1100px;
+    margin: 4rem auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10%;
+    color: #333;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .nepl-heading {
+    font-size: 3rem;
+    color: #0056b3;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 700;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transition for hover effect */
+  }
+  
+  .nepl-heading:hover {
+    color: #ff6347; /* Change color on hover (tomato red) */
+    transform: scale(1.05); /* Slightly scale up the heading */
+  }
+  
+  .nepl-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transition for hover effect */
+  }
+  
+  .nepl-description:hover {
+    color: #007bff; /* Change text color to blue on hover */
+    transform: translateX(5px); /* Slightly move the text to the right */
+  }
+  
+  .nepl-description:first-of-type {
+    margin-top: 0;
+  }
+  
+  .nepl-description:last-of-type {
+    margin-bottom: 0;
+  }
+  
+  /* Hover effect for container */
+  .nepl-content-container:hover {
+    
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+    transform: translateY(-5px); /* Subtle lift effect */
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 1024px) {
+    .nepl-content-container {
+      padding: 3rem;
+      margin-top: 5%;
+    }
+  
+    .nepl-heading {
+      font-size: 2.5rem;
+    }
+  
+    .nepl-description {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .nepl-content-container {
+      padding: 2rem;
+    }
+  
+    .nepl-heading {
+      font-size: 2rem;
+    }
+  
+    .nepl-description {
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nepl-content-container {
+      padding: 1.5rem;
+    }
+  
+    .nepl-heading {
+      font-size: 1.8rem;
+    }
+  
+    .nepl-description {
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -1,0 +1,104 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Container */
+.part3_main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px; 
+    margin-bottom: -150px;
+}
+
+/* Inner Content */
+.part3_inner {
+    width: 60%; /* Adjust this width according to your layout */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px; /* Space between images */
+}
+
+/* Inner Content Items */
+.part3_inner div {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Middle Image Container */
+.middle_img {
+    width: 100%;
+    height: 100%;
+    
+    /* display: flex;
+    flex-direction: column; */
+}
+.middle_img img{
+    height: 100%;
+}
+
+/* Text and Button in Middle Image */
+.middle_img p, h4 {
+    color: white;
+}
+
+.middle_img b {
+    border: 1px solid white;
+    background-color: white;
+    padding: 10px 20px; /* Adjust padding to increase the height */
+    display: inline-block; /* Ensure the padding increases the height */
+}
+
+/* Images */
+.part3_inner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
+
+/* Responsive Adjustments */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .part3_inner {
+        width: 80%; 
+        flex-direction: column; 
+        gap: 20px; 
+    }
+
+    .middle_img {
+        height: 250px; 
+    }
+
+    .middle_img b {
+        padding: 8px 16px; /* Adjust padding to fit smaller screen */
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .part3_main {
+        padding: 10px 0px; 
+        margin-bottom: -100px; 
+    }
+
+    .part3_inner {
+        width: 100%; 
+        gap: 15px; 
+    }
+
+    .middle_img {
+        height: 200px; 
+    }
+
+    .middle_img b {
+        padding: 6px 12px; 
+    }
+}

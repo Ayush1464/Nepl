@@ -1,0 +1,35 @@
+.preloader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.logo {
+  width: 150px; /* Adjust as needed */
+  margin-bottom: 20px; /* Space between logo and loader */
+  animation: growLogo 2.5s ease-in-out forwards; /* Updated animation */
+}
+
+.loading-text {
+  margin-top: 20px; /* Space between loader and text */
+  font-size: 18px;
+  color: #333; /* Text color */
+}
+
+@keyframes growLogo {
+  0% {
+    transform: scale(0.3); /* Start at 30% of original size */
+    opacity: 0.3; /* Mostly transparent */
+  }
+  70% {
+    transform: scale(1.2); /* Grow slightly larger than normal size */
+    opacity: 0.8; /* Almost fully visible */
+  }
+  100% {
+    transform: scale(1); /* Settle at normal size */
+    opacity: 1; /* Fully visible */
+  }
+}

@@ -1,0 +1,205 @@
+.map-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    
+  }
+  
+  .map-image {
+    width: 100%;
+    height: 350px;
+  }
+  
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20rex;
+    color: rgb(31, 31, 220); /* Adjust the color of the icon */
+  }
+  .Address1{
+  position: absolute;
+    width: 340px;
+    height: 185px;
+    background-color:  #f9f9f9;
+    line-height: 15px;
+    margin-left: 20%;
+    bottom: -130px;
+    border-top: 3px solid blue;
+    
+    
+  }
+  .Address1 span{
+    margin-left: 18px;
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .Address1 p{
+    font-size: 20px;
+  }
+
+  .h2name{
+    display: inline-block;
+    padding: 15px 15px;
+    line-height:35px ;
+    color: green;
+  }
+  .numbers {
+    position: absolute;
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    padding: 10px;
+    background-color: #f9f9f9; /* Optional background color */
+    bottom: -104px;
+    left: 47%;
+    
+  }
+  
+  .num {
+    margin-right: 15px; /* Space between the image and the contacts */
+  }
+  
+  .call_img {
+    width: 50px; /* Adjust the size of the image */
+    height: 50px;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+  }
+  
+  .contacts {
+    font-family: Arial, sans-serif; /* Choose a nice font */
+  }
+  
+  .contacts span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333; /* Color for the company contacts text */
+    display: block;
+   
+  }
+  
+  .contacts h5 {
+    margin: 5px 0; /* Space between phone numbers */
+    font-size: 18px;
+    color: #555; /* Color for the phone numbers */
+  }
+  .emails {
+    position: absolute;
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    padding: 10px;
+    background-color: #f9f9f9; /* Optional background color */
+    bottom: -104px;
+    right: 17%;
+    
+  }
+  
+  .email {
+    margin-right: 15px; /* Space between the image and the contacts */
+  }
+  
+  .email_img {
+    width: 50px; /* Adjust the size of the image */
+    height: 50px;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+  }
+  
+  .mails {
+    font-family: Arial, sans-serif; /* Choose a nice font */
+  }
+  
+  .mails span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333; /* Color for the company contacts text */
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .mails h5 {
+    margin: 5px 0; /* Space between phone numbers */
+    font-size: 18px;
+    color: #555; /* Color for the phone numbers */
+  }
+  /* Tablets and Small Screens */
+@media (max-width: 768px) {
+  .map-container {
+      margin-top: 5%;
+      margin-bottom: 80%;
+  }
+
+  .map-image {
+      height: 250px; /* Adjust the height for smaller screens */
+  }
+
+  .Address1 {
+      width: 100%;
+      height: auto; /* Allow height to adjust automatically */
+      margin-left: 0%;
+      bottom: -65%; /* Adjust position */
+  }
+
+  .numbers {
+      width: 100%;
+      left: 50%;
+      bottom:-17rem;
+      transform: translateX(-50%); /* Center horizontally */
+  }
+
+  .emails {
+    width: 100%;
+    left: 0%;
+      
+      bottom: -24rem; /* Adjust position */
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  .map-container {
+      margin-top: 5%;
+      margin-bottom: 90%;
+  }
+
+
+  .map-image {
+      height: 200px; /* Adjust the height for mobile screens */
+  }
+
+  .Address1 {
+      width: 100%;
+      height: auto; /* Allow height to adjust automatically */
+      margin-left: 0;
+      bottom: -100px; /* Adjust position */
+  }
+
+  .numbers {
+      left: 50%;
+      width: 100%;
+      height: auto;
+      bottom: -200px; /* Adjust position */
+      transform: translateX(-50%); /* Center horizontally */
+  }
+
+  .emails {
+    width: 100%;
+      left: 0%;
+      bottom: -310px; /* Adjust position */
+  }
+}
+
+
+
+
+
+ 
+
+
+  
+  
+  

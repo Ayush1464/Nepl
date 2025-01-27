@@ -1,0 +1,214 @@
+.nav-upper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 13px ;
+    margin-top: 3px;
+}
+
+
+.nav-upper-left a{
+    text-decoration: none;
+    color: #333;
+    padding-right: 20px;
+    font-size: 15px;
+}
+/* Styling for the logo link */
+.container.nepl-navbar .nav_active {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    text-decoration: none; /* Remove underline from the link */
+  }
+  
+  /* Styling for the logo image */
+  .container.nepl-navbar .nav_active img {
+    height: 8rem; /* Increased height for better visibility */
+    width: 8rem; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure image does not overflow */
+    display: block; 
+  }
+  
+
+
+.nav-upper-right a{
+    text-decoration: none;
+    color: rgb(72, 72, 255);
+    padding: 0 12px;
+    font-size: 14px;
+}
+
+hr{
+    width: 100%;
+    height: 2px;
+    margin: 20px 0px;
+    background-color: #333;
+    border: none;
+}
+
+.nepl-navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nepl-navbar-right{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    font-size: 17px;
+}
+
+.nepl-navbar-right a{
+    text-decoration: none;
+    color: #49557e;
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+
+.nepl-navbar-right a:hover,
+.nepl-navbar-right a.active{
+    color: #50219c;
+    cursor: pointer;
+}
+
+.nepl-navbar-right a:hover::after,
+.nepl-navbar-right a.active::after{
+    content: "";
+    width: 70%;
+    height: 2px;
+    background: #50219c;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+}
+
+.bi-chevron-down{
+    font-size: 13px;
+    padding-left: 2px;
+}
+
+.menu-bar{
+    display: none;
+}
+
+/* Media Queries */
+
+/* Tablets and Small Screens */
+@media (max-width: 750px) {
+    .nav-upper-left a{
+        font-size: 14px;
+    }
+
+    .nepl-navbar-right a{
+        display: none;
+    }
+
+    .menu-bar{
+        display: block;
+        font-size: 45px;
+    }
+
+    .nepl-navbar{
+        display: flex;
+        align-items: center;
+    }
+
+    .side-bar {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 50px;
+        right: 0;
+        width: 50%;
+        height: 500px;
+        gap: 7px;
+        z-index: 1000; /* Ensure the sidebar is on top of other elements */
+        background: #fff; /* Optional: background to make text more visible */
+    }
+
+    .side-bar a{
+        margin-left: 50px;
+        padding-top: 30px;
+        text-decoration: none;
+        color: #50219c;
+        font-weight: bold;
+    }
+
+    .side-bar .menu-bar{
+        margin-left: 50px;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 400px) {
+    .nav-upper{
+        display: none;
+    }
+
+    hr{
+        display: none;
+    }
+
+    .nepl-navbar{
+        display: flex;
+        align-items: center;
+        box-shadow: 5px 0 10px gray;
+    }
+
+    .nepl-navbar-right{
+        gap: 20px;
+        font-size: 16px;
+    }
+
+    .menu-bar{
+        font-size: 40px;
+    }
+
+    .side-bar {
+        width: 80%;
+        top: 45px;
+        gap: 10px;
+        background: #fff;
+        padding: 10px 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000; /* Ensure the sidebar is on top of other elements */
+    }
+
+    .side-bar a{
+        margin-left: 20px;
+        padding-top: 15px;
+        font-size: 16px;
+    }
+}
+
+/* Small Mobile Phones */
+@media (max-width: 320px) {
+    .nepl-navbar-right{
+        gap: 15px;
+        font-size: 14px;
+    }
+
+    .menu-bar{
+        font-size: 35px;
+    }
+
+    .side-bar {
+        width: 100%;
+        top: 40px;
+        gap: 5px;
+        padding: 5px 0;
+        z-index: 1000; /* Ensure the sidebar is on top of other elements */
+    }
+
+    .side-bar a{
+        margin-left: 15px;
+        padding-top: 10px;
+        font-size: 14px;
+    }
+}
+
+.dropdown-menu .dropdown-item {
+    color: #000000; /* Change to any color you prefer */
+    font-weight: bold;
+  }
+  

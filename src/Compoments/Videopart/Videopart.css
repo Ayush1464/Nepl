@@ -1,0 +1,101 @@
+/* Container for the video and play button */
+.video-container {
+  position: relative; /* Positioning context for the play button */
+  display: inline-block; /* Fit the container to the video size */
+  height: 500px; /* Adjust the height as needed */
+  width: 100%; /* Ensure it takes the full width available */
+  overflow: hidden;
+  margin-top: 100px;
+  margin-bottom: -100px;
+}
+
+.video1 {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.play-button img {
+  width: 35px; /* Icon size */
+  height: 35px; /* Icon size */
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2)); /* Add shadow to the icon */
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.play-button:hover {
+  background-color: #f2f2f2;
+  transform: translate(-50%, -50%) scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.play-button:active {
+  transform: translate(-50%, -50%) scale(0.95);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Adjustments */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .video-container {
+    height: 350px; /* Reduce height for tablets */
+    margin-top: 50px;
+    margin-bottom: -100px;
+    position: relative;
+  }
+
+  .play-button {
+    width: 60px; /* Smaller play button */
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+
+  .play-button img {
+    
+    width: 25px; /* Smaller icon size */
+    height: 25px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  .video-container {
+    height: 250px; /* Further reduce height for mobile */
+    margin-top: 30px;
+    margin-bottom: -100px;
+    position: relative;
+  }
+
+  .play-button {
+    width: 50px; /* Even smaller play button */
+    height: 50px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+  }
+
+  .play-button img {
+    width: 20px; /* Even smaller icon size */
+    height: 20px;
+    
+  }
+}

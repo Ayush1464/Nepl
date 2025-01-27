@@ -1,0 +1,143 @@
+.last_Service21{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+    width: 70%;
+    margin-left: 200px;
+    height: auto;
+    margin-bottom: -100px;
+    
+}
+.bottom_Service21{
+    width: 20.5%;
+    
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow:0px 2px 4px rgba(224, 197, 197, 0.2);
+    border-top: 10px  solid blue;
+    
+   
+}
+.con_Service21{
+    padding: 2px;
+
+}
+.con_Service21 a{
+    margin-left: -8px;
+}
+.con_Service21 h3{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.con_Service21 p{
+    color: #0000;
+    font-size: 15px;
+    line-height: 1.3;
+}
+.con_Service21 .last_BtnService21{
+    display: inline-block;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+    
+    text-decoration: none;
+    border-radius: 4px;
+
+    font-size: 20px;
+    border: 1px black;
+    
+}
+.con_Service21 .last_BtnService21:hover{
+    background-color: #3970e7;
+    color: #ffffffb0;
+}
+.con_Service21 .last_BtnService21 i{
+    color: rgb(30, 173, 54);
+    font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+    .last_Service21 {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: -60px;
+        justify-content: center; /* Center items within the container */
+    }
+
+    .bottom_Service21 {
+        width: 100%;
+        max-width: 300px; /* Ensuring the cards are not too large */
+        height: auto; /* Allow height to adjust based on content */
+        margin: 10px auto; /* Center cards horizontally and reduce margin */
+    }
+
+    .con_Service21 {
+        padding: 10px;
+        margin-left: 0; /* Remove negative margin */
+    }
+
+    .con_Service21 h3 {
+        font-size: 18px;
+    }
+
+    .con_Service21 p {
+        font-size: 14px;
+    }
+
+    .con_Service21 .last_BtnService21 {
+        font-size: 18px;
+        padding: 6px 12px;
+    }
+
+    .con_Service21 .last_BtnService21 i {
+        font-size: 16px;
+    }
+}
+
+/* Responsive Styles for 480px and Below */
+@media screen and (max-width: 480px) {
+    .last_Service21 {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: -40px;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items within the container */
+    }
+
+    .bottom_Service21 {
+        width: 100%;
+        max-width: 250px; /* Further restrict card width */
+        height: auto;
+        margin: 10px auto; /* Center cards horizontally */
+    }
+
+    .con_Service21 {
+        padding: 8px;
+    }
+
+    .con_Service21 h3 {
+        font-size: 16px;
+    }
+
+    .con_Service21 p {
+        font-size: 12px;
+    }
+
+    .con_Service21 .last_BtnService21 {
+        font-size: 16px;
+        padding: 6px 10px;
+    }
+
+    .con_Service21 .last_BtnService21 i {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .center-mobile {
+        text-align: center;
+        margin-left: 130px !important;
+        font-size: 24px; /* Adjust the font size if needed */
+    }
+}
+
+

@@ -1,0 +1,190 @@
+.wrapper_ServiceThree {
+    width: 75%;
+    margin-left: 130px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Content and image section styles */
+.content_ServiceThree {
+    width: 50%;
+    transition: 0.4s ease;
+    margin: 80px;
+}
+
+div .content_ServiceThree h2 {
+    padding-bottom: 40px;
+}
+
+.content_ServiceThree h2 {
+    font-size: 60px;
+}
+
+.content_ServiceThree h3 span {
+    font-size: 12px;
+    color: #201c1c;
+}
+
+.content_ServiceThree:hover {
+    transform: translateY(-10px);
+}
+
+.content_ServiceThree h1 b {
+    font-size: 30px;
+    color: #4249a9;
+}
+
+.content_ServiceThree p {
+    color: #666;
+    font-size: 19px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.image_ServiceThree button i {
+    font-size: 16px;
+}
+
+.image_ServiceThree .button {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffff;
+    letter-spacing: 1px;
+    border: 1px solid white;
+    height: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.image_ServiceThree button:hover {
+    color: #fff;
+    background-color: #3b44f1;
+}
+
+.image_ServiceThree {
+    width: 21em;
+    height: 25em;
+    background-color: #0e7af6;
+    box-shadow: 5px 5px 5px #6294da;
+    transition: 0.4s ease;
+    color: #ffff;
+}
+
+.image_ServiceThree {
+    height: auto;
+    padding: 8px 16px;
+    background-color: #3039d4;
+    padding: 50px;
+}
+
+/* Responsive Styles for Tablets */
+@media screen and (max-width: 768px) {
+    .wrapper_ServiceThree {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content_ServiceThree {
+        width: 100%;
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    .content_ServiceThree h2 {
+        font-size: 30px;
+    }
+
+    .content_ServiceThree h1 b {
+        font-size: 25px;
+    }
+
+    .content_ServiceThree p {
+        font-size: 16px;
+    }
+
+    .image_ServiceThree {
+        width: 100%;
+        max-width: 300px; /* Restrict width */
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .image_ServiceThree button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+
+/* Responsive Styles for Phones */
+@media screen and (max-width: 480px) {
+    .wrapper_ServiceThree {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content_ServiceThree {
+        width: 100%;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .content_ServiceThree h2 {
+        font-size: 24px;
+    }
+
+    .content_ServiceThree h1 b {
+        font-size: 20px;
+    }
+
+    .content_ServiceThree p {
+        font-size: 14px;
+    }
+
+    .image_ServiceThree {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .image_ServiceThree button {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}
+.image_ServiceThree {
+    width: 21em;
+    height: 33em; 
+    background-color: #0e7af6;
+    box-shadow: 5px 5px 5px #6294da;
+    transition: 0.4s ease;
+    color: #ffff;
+}
+
+@media screen and (max-width: 768px) {
+    .image_ServiceThree {
+        width: 100%;
+        max-width: 300px; 
+        height: 35em; 
+        margin: 20px 0;
+    }
+}
+
+/* Responsive Styles for Phones */
+@media screen and (max-width: 480px) {
+    .image_ServiceThree {
+        width: 100%;
+        max-width: 400px; 
+        height: 28em; /* Adjust height for phones */
+        margin: 10px 0;
+    }
+}

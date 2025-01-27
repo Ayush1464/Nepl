@@ -1,0 +1,141 @@
+/* Overall container styling */
+.why-choose-us-container {
+    padding: 5rem 2rem;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.section-title {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+/* Cards container */
+.feature-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+/* Base card styling */
+.feature-card {
+    background-color: #fff;
+    padding: 4rem 2rem;  /* Increased top padding to make space for icon */
+    border-radius: 1.5rem;
+    box-shadow: 0 0.6rem 1.8rem rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 25rem;
+    position: relative; /* To place icon in the upper section */
+}
+
+/* Card Hover Effect */
+.feature-card:hover {
+    transform: translateY(-1.2rem);
+    box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+/* Card Title */
+.feature-card h2 {
+    font-size: 1.8rem;
+    color: #2a2a2a;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    text-align: center;
+}
+
+/* Card Description */
+.feature-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/* Specific styles for each card */
+.feature-card.expertise-card {
+    background: linear-gradient(135deg, #a5d6a7, #66bb6a);
+    color: #fff;
+}
+
+.feature-card.solutions-card {
+    background: linear-gradient(135deg, #ffeb3b, #fbc02d);
+    color: #333;
+}
+
+.feature-card.customer-satisfaction-card {
+    background: linear-gradient(135deg, #ff7043, #f4511e);
+    color: #fff;
+}
+
+.feature-card.innovation-card {
+    background: linear-gradient(135deg, #4caf50, #388e3c);
+    color: #fff;
+}
+
+.feature-card.safety-card {
+    background: linear-gradient(135deg, #03a9f4, #0288d1);
+    color: #fff;
+}
+
+/* Adding Icons to the Cards */
+.feature-card .feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    transition: color 0.3s ease;
+    position: absolute;
+    top: 0.1rem; /* Adjusted top positioning */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Ensure the icon stays on top */
+}
+
+/* Card Title and Description Adjustments */
+.feature-card h2 {
+    text-align: center;
+}
+
+/* Card Content */
+.feature-card p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 1.5;
+}
+
+/* Card Hover Effect on Icon */
+.feature-card:hover .feature-icon {
+    color: #f1f1f1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .feature-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .feature-card p {
+        font-size: 1rem;
+    }
+
+    .feature-card .feature-icon {
+        font-size: 2.5rem;
+        top: 1rem; /* Adjust icon positioning for mobile */
+    }
+}

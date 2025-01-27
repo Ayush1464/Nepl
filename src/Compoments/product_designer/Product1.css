@@ -1,0 +1,207 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensure flex items wrap on smaller screens */
+    margin: 100px;margin-top: 10px;
+    /* padding: 20px; */
+    background-color: #fff;
+    margin-bottom: -100px;
+}
+
+.product-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.product-sidebar {
+    height: 750px;
+    width: 300px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-left: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.product-container h1 {
+    color: #002d5b;
+}
+
+.product-container 
+    h2 {
+    color: #002d5b;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.product-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.product-container ul li {
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.product-container ul li:before {
+    content: '●';
+    color: #00aa55;
+    position: absolute;
+    left: 0;
+}
+
+.product-apply-button {
+    display: block;
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.product-apply-button:hover {
+    background-color: #0056b3;
+}
+
+.product-job-summary h3 {
+    font-size: 1.2em;
+    color: #002d5b;
+    margin-bottom: 10px;
+}
+
+.product-job-summary-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.product-job-summary-item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.product-view-all-jobs {
+    display: inline-block;
+    margin: 15px 0;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.product-view-all-jobs:hover {
+    text-decoration: underline;
+}
+
+.product-social-share {
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.product-social-share h4 {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.product-social-share a {
+    margin-right: 10px;
+}
+
+.product-social-share img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+    .product-container {
+        flex-direction: column; /* Stack content vertically */
+        margin: 20px; /* Reduce margin for smaller screens */
+        padding: 10px;
+    }
+
+    .product-sidebar {
+        width: 100%; /* Full width sidebar */
+        height: auto; /* Let the height adjust based on content */
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.8em; /* Reduce font size for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.3em; /* Adjust sub-heading size */
+    }
+
+    .product-apply-button {
+        font-size: 14px; /* Slightly reduce button font size */
+        padding: 10px;
+    }
+
+    .product-job-summary h3 {
+        font-size: 1.1em;
+    }
+
+    .product-job-summary-item img {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .product-container {
+        margin: 10px; /* Further reduce margins */
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 1.5em; /* Further reduce heading size */
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .product-sidebar {
+        padding: 10px;
+        border-left: none; /* Remove border for mobile */
+        border-top: 1px solid #ddd; /* Optional: Add a top border */
+    }
+
+    .product-apply-button {
+        font-size: 12px; /* Adjust button font size */
+        padding: 8px;
+    }
+
+    .product-job-summary-item {
+        margin-bottom: 10px; /* Reduce space between items */
+    }
+
+    .product-job-summary-item img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .product-social-share img {
+        width: 25px; /* Reduce social share icon size */
+        height: 25px;
+    }
+}
